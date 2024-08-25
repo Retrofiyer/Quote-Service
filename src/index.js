@@ -7,7 +7,6 @@ app.use(bodyParser.json());
 
 const QUOTE_API_URL = 'https://api.quotable.io/random';
 
-// Function to fetch a random quote from an external API
 async function getRandomQuote() {
   try {
     const response = await axios.get(QUOTE_API_URL);
